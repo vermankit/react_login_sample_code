@@ -1,6 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+<<<<<<< HEAD
+=======
+import 'font-awesome/css/font-awesome.min.css';
+import './LoginPage/login.css';
+>>>>>>> b47af0e2a5befbbb914ed482386f054aa7a8ae46
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
