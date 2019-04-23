@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 import Login from './LoginPage/Login';
+import {configureFakeBackEnd} from './helper/fake.backend'
+configureFakeBackEnd();
 
 class App extends Component {
   
