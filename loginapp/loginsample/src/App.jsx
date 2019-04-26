@@ -5,6 +5,7 @@ import Login from './LoginPage/Login';
 import {configureFakeBackEnd} from './helper/fake.backend'
 import { PrivateRoute } from './components/PrivateRoute';
 import { HomePage } from './HomePage/HomePage';
+
 configureFakeBackEnd();
 
 class App extends Component {
