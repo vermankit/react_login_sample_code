@@ -24,7 +24,10 @@ class Login extends React.Component {
         const data = this.state; 
         userService.login(data.username, data.password)
             .then(
-               user => console.log(user)
+                user => {
+                    const { from } = this.props.location.state || { from: { pathname: "/" } };
+                    this.props.history.push(from);
+                }
             );            
     }
 

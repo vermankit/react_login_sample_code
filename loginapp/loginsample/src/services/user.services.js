@@ -1,4 +1,4 @@
-
+import {authHeader} from '../helper/AuthHelper'
 
 
 export const userService = {
@@ -33,7 +33,14 @@ function logout(){
 }
 
 function getAll(){
+    let requestOptions = {
+        method : "GET",
+        headers : authHeader()
+    }
 
+    return fetch(`${process.env.REACT_APP_API}/users`,requestOptions)
+    .then( users => console.log(users));
+    
 }
 
 function handleResponse(response){
