@@ -2,11 +2,11 @@ import React, { Component } from 'react';
 import {BrowserRouter as Router,Route} from 'react-router-dom';
 import './App.css';
 import Login from './LoginPage/Login';
-import {configureFakeBackEnd} from './helper/fake.backend'
+import {configureFakeBackend} from './helper/fake.backend'
 import { PrivateRoute } from './components/PrivateRoute';
 import { HomePage } from './HomePage/HomePage';
 
-configureFakeBackEnd();
+configureFakeBackend();
 
 class App extends Component {
   

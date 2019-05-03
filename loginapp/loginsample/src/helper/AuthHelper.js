@@ -1,8 +1,8 @@
 export const authHeader = () => {
-   let user = localStorage.getItem('user');
+   let user = JSON.parse(localStorage.getItem('user'));
 
-   if(user && user.authData){
-      return {'Authorization': 'Basic' + user.authData};
+   if(user && user.authdata){
+      return {'Authorization': 'Basic ' + user.authdata};
    }
    return {};
    

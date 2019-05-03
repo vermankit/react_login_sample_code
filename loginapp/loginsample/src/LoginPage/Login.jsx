@@ -41,7 +41,7 @@ class Login extends React.Component {
         const {...data} = this.state;
         return (
             <div  className="login-box">
-                <h1>Login</h1>
+                <h1>Travel With Us</h1>
                 <form onSubmit={this.handleSubmit}>
                     <div className="text-box"> 
                     <i className="fa fa-user"></i>                  
