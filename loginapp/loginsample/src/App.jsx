@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {BrowserRouter as Router,Route} from 'react-router-dom';
 import './App.css';
-import Login from './LoginPage/Login';
+import LoginHooks from './LoginPage/LoginHooks';
 import {configureFakeBackEnd} from './helper/fake.backend'
 import { PrivateRoute } from './components/PrivateRoute';
 import { HomePage } from './HomePage/HomePage';
@@ -24,7 +24,7 @@ class App extends Component {
       <div>
         <Router>
           <div>
-           <Route path='/login' component={Login}></Route>    
+           <Route path='/login' component={LoginHooks}></Route>    
            <PrivateRoute exact path='/home' component={HomePage} ></PrivateRoute>       
           </div>
         </Router>
