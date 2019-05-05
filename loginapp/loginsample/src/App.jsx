@@ -2,11 +2,13 @@ import React, { Component } from 'react';
 import {BrowserRouter as Router,Route} from 'react-router-dom';
 import './App.css';
 import LoginHooks from './LoginPage/LoginHooks';
-import {configureFakeBackEnd} from './helper/fake.backend'
+
+import {configureFakeBackend} from './helper/fake.backend'
 import { PrivateRoute } from './components/PrivateRoute';
 import { HomePage } from './HomePage/HomePage';
 
-configureFakeBackEnd();
+
+configureFakeBackend();
 
 class App extends Component {
   
@@ -25,7 +27,7 @@ class App extends Component {
         <Router>
           <div>
            <Route path='/login' component={LoginHooks}></Route>    
-           <PrivateRoute exact path='/home' component={HomePage} ></PrivateRoute>       
+           <PrivateRoute exact path='/' component={HomePage} ></PrivateRoute>       
           </div>
         </Router>
       </div>        

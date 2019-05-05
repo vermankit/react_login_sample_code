@@ -16,10 +16,11 @@ body{
 }
 
 .login-box h1{
-    border-bottom: 6px solid #4caf50;
+    border-bottom: 6px solid #e7f0e7;
     padding: 13px 0;
     margin-bottom: 50px;
     font-size: 40px;
+    font-family: serif
 }
 
 
@@ -28,7 +29,7 @@ body{
     font-size: 20px;
     padding: 8px 0;
     margin: 8px 0;
-    border-bottom: 1px solid #4caf50;
+    border-bottom: 1px solid #e7f0e7;
 }
 
 .text-box input{
@@ -49,7 +50,7 @@ body{
 
 .btn{
     background: none;
-    border: 2px solid #4caf50;
+    border: 2px solid #e7f0e7;
     width: 100%;
     color: white;
     font-size: 18px;
